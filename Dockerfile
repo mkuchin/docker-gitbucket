@@ -15,4 +15,8 @@ EXPOSE 8080
 # Port for SSH access to git repository (Optional)
 EXPOSE 29418
 
-CMD ["java", "-jar", "/opt/gitbucket.war", "--prefix=/git"]
+ENV PREFIX=/
+ENV HOST=localhost
+
+CMD java -jar /opt/gitbucket.war --prefix=$PREFIX --host=$HOST
+CMD ["java", "-jar", "", "--prefix=/git"]
