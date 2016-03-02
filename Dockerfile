@@ -19,4 +19,3 @@ ENV PREFIX=/
 ENV HOST=localhost
 
 CMD java -jar /opt/gitbucket.war --prefix=$PREFIX --host=$HOST
-CMD ["java", "-jar", "", "--prefix=/git"]
